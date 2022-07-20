@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/Paranoidream/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/Paranoidream/frontend-project-lvl1#readme"
+
+    "type": "module",
+    "homepage": "https://github.com/Paranoidream/frontend-project-lvl1#readme",
+    "dependencies": {
+      "debug": "^4.3.4",
+      "lodash": "^4.17.21"
+    },
+    "bin": {
+      "brain-games": "bin/brain-games.js"
+    }
 }
