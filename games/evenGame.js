@@ -1,30 +1,24 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import random from '../src/random.js';
+import gameLogic from '../src/index.js';
 
-var userName = readlineSync.question('May I have your name? ');
-console.log('Hello ' + userName + '!');
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-export default () => {
-for (let i = 0; i < 3; i += 1) {
-      console.log('Question: ' + random());
-    let answer = readlineSync.question('Your answer: ');
-    let rightAnswer = '';
-    if (random % 2 === 0) {
-        rightAnswer = 'yes';
-    } else {
-        rightAnswer = 'no';
-    }
-    while (answer !== rightAnswer) {
-        console.log(`"${answer}" + 'is wrong answer ;(. Correct answer was ' + "${rightAnswer}"`);
-        console.log("Let's try again, " + userName + "!");
-        return false;
-    }
-    console.log('Correct!');
+const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+const isEven = (number) => number % 2 === 0;
+
+const gameData = () => {
+    const question = random();
+
+    const rightAnswer = isEven(question) ? 'yes' : 'no';
     
-}
-console.log('Congratulations, ' + userName +'!');
-return true;
+    return [question, rightAnswer];
 };
+
+const start = () => {
+    gameLogic(gameRule, gameData);
+};
+
+export default start;
 
 
