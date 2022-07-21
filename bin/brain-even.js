@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 var readlineSync = require('readline-sync');
+
 console.log('Welcome to the Brain Games!');
 var userName = readlineSync.question('May I have your name? ');
 console.log('Hello ' + userName + '!');
@@ -12,15 +13,14 @@ for (let i = 0; i < 3; i += 1) {
         return randomNum;
       }
       console.log('Question: ' + number());
-    var answer = readlineSync.question('Your answer: ');
-    if (number % 2 == 0) {
+    let answer = readlineSync.question('Your answer: ');
+    if (number % 2 === 0) {
         rightAnswer = 'yes';
-    }
-    else if (number % 2 !== 0) {
+    } else {
         rightAnswer = 'no';
     }
-    else if (answer !== rightAnswer) {
-        console.log(answer + 'is wrong answer ;(. Correct answer was ' + rightAnswer);
+    if (answer !== rightAnswer) {
+        console.log(`"${answer}" + 'is wrong answer ;(. Correct answer was ' + "${rightAnswer}"`);
         console.log("Let's try again, " + userName + "!");
         return false;
     }
