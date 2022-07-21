@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import greeting from '../src/cli.js';
-var readlineSync = require('readline-sync');
 
 greeting();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
