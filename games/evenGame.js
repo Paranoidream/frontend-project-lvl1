@@ -9,9 +9,7 @@ const isEven = (number) => number % 2 === 0;
 
 const gameData = () => {
     const question = random();
-
     const rightAnswer = isEven(question) ? 'yes' : 'no';
-    
     return [question, rightAnswer];
 };
 

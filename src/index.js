@@ -6,8 +6,8 @@ var userName = readlineSync.question('May I have your name? ');
 console.log(`Hello ${userName}!`);
 console.log(welcoming);
 for (let i = 0; i < 3; i += 1) {
-    const [message, rightAnswer] = gameData();
-    console.log(`Question: ${message}`);
+    const [question, rightAnswer] = gameData();
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (String(answer) !== rightAnswer) {
       console.log(`"${answer}" is wrong answer;(. Correct answer was "${rightAnswer}".`);
