@@ -9,7 +9,7 @@ for (let i = 0; i < 3; i += 1) {
     const [question, rightAnswer] = gameData();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (String(answer) !== rightAnswer) {
+    if (answer !== String(rightAnswer)) {
       console.log(`"${answer}" is wrong answer;(. Correct answer was "${rightAnswer}".`);
       console.log(`Let 's try again, ${userName}!`);
       return;
