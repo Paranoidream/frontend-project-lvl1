@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 /* eslint-disable no-debugger, no-console */
-import readlineSync from 'readline-sync';
-
+import greeting from '../src/cli.js';
 console.log('Welcome to the Brain Games!');
 
-const name = readlineSync.question('Your answer: ');
+greeting();
 
 
 

@@ -1,4 +1,4 @@
-var readlineSync = require('readline-sync');
+import readlineSync from 'readline-sync';
 
 export default () => {
 var userName = readlineSync.question('May I have your name? ');

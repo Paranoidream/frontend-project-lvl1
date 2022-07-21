@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "make lint": "npx eslint ."
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Paranoidream/frontend-project-lvl1.git"
@@ -15,14 +16,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Paranoidream/frontend-project-lvl1/issues"
-  },
-  "type": "commonjs",
-  "homepage": "https://github.com/Paranoidream/frontend-project-lvl1#readme",
-  "dependencies": {
-    "debug": "^4.3.4",
-    "gulp-imagemin": "^7.1.0",
-    "lodash": "^4.17.21",
-    "readline-sync": "^1.4.10"
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
