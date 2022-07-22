@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-import readlineSync from 'readline-sync';
 import random from '../src/random.js';
 import gameLogic from '../src/index.js';
 
