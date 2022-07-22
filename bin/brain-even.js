@@ -3,4 +3,3 @@
 import start from '../games/evenGame.js'
 
 start()
-
