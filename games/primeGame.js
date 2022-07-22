@@ -1,30 +1,29 @@
-import random from '../src/random.js'
-import gameLogic from '../src/index.js'
+import random from '../src/random.js';
+import gameLogic from '../src/index.js';
 
-const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number <= 1) {
-    return false
+    return false;
   }
   for (let i = 2; i <= (Math.sqrt(number)); i += 1) {
     if (number % i === 0) {
-      return false
+      return false;
     }
   }
-  return true
-}
+  return true;
+};
 
 const gameData = () => {
-  const number = random(1, 200)
-  const question = number
-
+  const number = random(1, 200);
+  const question = number;
   const rightAnswer = isPrime(question) ? 'yes' : 'no';
-  return [question, rightAnswer]
-}
+  return [question, rightAnswer];
+};
 
 const startPrime = () => {
-  gameLogic(gameRule, gameData)
-}
+  gameLogic(gameRule, gameData);
+};
 
-export default startPrime
+export default startPrime;
