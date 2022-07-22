@@ -12,3 +12,7 @@
 <p>Greatest common divisor game if you are right: </p><img src="./screenshots/gcdPassed.png">
 
 <p>Greatest common divisor game if you made a mistake: </p><img src="./screenshots/gcdFailed.png">
+
+<p>Progression game if you are right: </p><img src="./screenshots/progressionPassed.png">
+
+<p>Progression game if you made a mistake: </p><img src="./screenshots/progressionFailed.png">
