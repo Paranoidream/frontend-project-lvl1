@@ -2,11 +2,18 @@ env:
   browser: true
   es2021: true
 extends:
-  - airbnb-base
+  - eslint:recommended
+  - plugin:react/recommended
+  - plugin:import/recommended
+  - airbnb
 parserOptions:
-  ecmaVersion: latest
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 13
   sourceType: module
+plugins:
+  - react
 rules: {
-  "import/extensions": "off",
-  "no-console": "off"
-}
+  "no-console": "off",
+  "import/extensions": "off"
+  }
