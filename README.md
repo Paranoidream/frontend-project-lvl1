@@ -12,9 +12,13 @@
 <li>Run the game command. </li> </ul>
 
 ### Games and commands:
+<ul><li>brain-even - starts a game where you need to define is the given number even or odd. </li>
+<li>brain-calc - starts a game where you need to become a calulator yourself! </li>
+<li>brain-gcd - starts a game where you need to figure out the greatest common divisor of given numbers. </li>
+<li>brain-progression - starts a game where you need to fill the blank using numbers in progression. </li> 
+<li>brain-prime - starts a game where you need to figure out if the given number is prime. </li></ul>
 
-
-
+### Good luck and have fun!
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Paranoidream/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Paranoidream/frontend-project-lvl1/actions)
