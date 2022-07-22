@@ -31,9 +31,9 @@ const question = `${num1} ${operator} ${num2}`;
 const rightAnswer = count(num1, num2, operator);
 return [question, rightAnswer];
 };
-  
+
 const startCalc = () => {
 gameLogic(gameRule, gameData);
 };
-  
+
 export default startCalc;
