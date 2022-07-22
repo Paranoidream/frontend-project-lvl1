@@ -1,5 +1,5 @@
-import gameLogic from '../src/index.js';
-import randomElement from '../src/randomElement.js';
+import {gameLogic} from '../src/index.js';
+import {randomElement} from '../src/randomElement.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
@@ -8,7 +8,7 @@ const divisor = (x, y) => {
     return divisor(y, x % y);
   }
   return x;
-};
+  };
 
 const gameData = () => {
   const num1 = randomElement(0, 20);
