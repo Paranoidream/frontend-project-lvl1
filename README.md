@@ -1,6 +1,19 @@
 ### Welcome to Brain Games project!
 <p>There are 5 games awailable for playing. </p>
-<p>In order to sucseed in them you should input 3 correct answers in a row. </p>
+<p>In order to sucseed you should type 3 correct answers in a row. </p>
+<p>Note that a typo is also a mistake. </p>
+
+### How to start playing:
+<p>You need at least v.13 of node.js to run it. Make sure that you jave a 'make' command. </p>
+<ul> <p>Instalation steps: </p> 
+<li>Clone the project. </li>
+<li>Install the currend build (npm ci). </li>
+<li>Install game packages (nmp ci). </li>
+<li>Run the game command. </li> </ul>
+
+### Games and commands:
+
+
 
 
 ### Hexlet tests and linter status:
