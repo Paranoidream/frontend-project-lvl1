@@ -3,17 +3,22 @@ env:
   es2021: true
 extends:
   - eslint:recommended
-  - plugin:react/recommended
-  - plugin:import/recommended
-  - airbnb
+  - plugin:@typescript-eslint/recommended
+parser: '@typescript-eslint/parser'
 parserOptions:
-  ecmaFeatures:
-    jsx: true
-  ecmaVersion: 13
-  sourceType: module
+  ecmaVersion: latest
 plugins:
-  - react
-rules: {
-  "no-console": "off",
-  "import/extensions": "off"
-  }
+  - '@typescript-eslint'
+rules:
+  indent:
+    - error
+    - 4
+  linebreak-style:
+    - error
+    - windows
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - always
