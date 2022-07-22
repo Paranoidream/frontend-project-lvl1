@@ -4,15 +4,8 @@ import randomElement from '../src/randomElement.js';
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const divisor = (x, y) => {
-  if ((typeof x !== 'number') || (typeof y !== 'number')) {
-    return false;
-  }
-  x = Math.abs(x);
-  y = Math.abs(y);
-  while (y) {
-    var t = y;
-    y = x % y;
-    x = t;
+  if (y !== 0) {
+    return divisor(y, x % y);
   }
   return x;
 };
