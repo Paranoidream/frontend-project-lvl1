@@ -16,3 +16,7 @@
 <p>Progression game if you are right: </p><img src="./screenshots/progressionPassed.png">
 
 <p>Progression game if you made a mistake: </p><img src="./screenshots/progressionFailed.png">
+
+<p>Prime game if you are right: </p><img src="./screenshots/primePassed.png">
+
+<p>Prime game if you made a mistake: </p><img src="./screenshots/primeFailed.png">
