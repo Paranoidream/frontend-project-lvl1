@@ -1,4 +1,5 @@
-import {randomElement} from '../src/randomElement.js';
+import gameLogic from '../src/index.js';
+import randomElement from '../src/randomElement.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
