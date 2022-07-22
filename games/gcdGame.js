@@ -7,8 +7,8 @@ const divisor = (x, y) => {
   if ((typeof x !== 'number') || (typeof y !== 'number')) {
     return false;
   }
-  let x = Math.abs(x);
-  let y = Math.abs(y);
+  x = Math.abs(x);
+  y = Math.abs(y);
   while (y) {
     var t = y;
     y = x % y;
