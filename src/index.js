@@ -5,7 +5,7 @@ const gameLogic = (welcoming, gameData) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello ${userName}!`);
   console.log(welcoming);
-for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < 3; i += 1) {
     const [question, rightAnswer] = gameData();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
