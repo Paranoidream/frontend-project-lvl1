@@ -15,6 +15,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    'import/no-named-as-default': 0
+    "import/extensions": "off",
+    "no-console": "off"
   }
 }

@@ -8,7 +8,7 @@ const divisor = (x, y) => {
     return divisor(y, x % y);
   }
   return x;
-  };
+};
 
 const gameData = () => {
   const num1 = randomElement(0, 20);
