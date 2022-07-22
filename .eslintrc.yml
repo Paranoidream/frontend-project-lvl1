@@ -22,3 +22,7 @@ rules:
   semi:
     - error
     - always
+  rules: {
+    "no-console": "off",
+    "import/extensions": "off"
+    }
