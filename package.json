@@ -4,6 +4,7 @@
   "type": "module",
   "description": "project",
   "main": "index.js",
+  "extends": "eslint:recommended",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "make lint": "npx eslint ."
