@@ -1,5 +1,4 @@
 import {random} from '../src/random.js';
-import {gameLogic} from '../src/index.js';
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
