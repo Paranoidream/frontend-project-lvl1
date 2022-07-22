@@ -1,6 +1,6 @@
 ### Welcome to Brain Games project!
 <p>There are 5 games awailable for playing. </p>
-<p>In order to sucseed you should type 3 correct answers in a row. </p>
+<p>In order to succseed you should type 3 correct answers in a row. </p>
 <p>Note that a typo is also a mistake. </p>
 
 ### How to start playing:
