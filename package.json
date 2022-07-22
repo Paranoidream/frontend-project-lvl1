@@ -34,7 +34,6 @@
   },
    "dependencies": {
     "readline-sync": "^1.4.10",
-    "brain-even": "^1.0.0",
     "eslint-config-airbnb-base": "^15.0.0"
     }
 }
