@@ -1,30 +1,30 @@
-import random from '../src/random.js';
-import gameLogic from '../src/index.js';
+import random from '../random.js';
+import gameLogic from '../index.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const progression = (start, step, length) => {
-  const progressionFin = [start];
+const getProgression = (start, step, length) => {
+  const progression = [start];
   for (let i = 1; i <= length; i += 1) {
-    progressionFin.push(start + i * step);
+    progression.push(start + i * step);
   }
-  return progressionFin;
+  return progression;
 };
 
-const gameData = () => {
+const getRoundData = () => {
   const start = random(-100, 101);
   const step = random(-5, 6);
   const length = random(5, 11);
   const hiddenAnswer = random(1, length - 1);
-  const makeProgression = progression(start, step, length);
+  const makeProgression = getProgression(start, step, length);
   const rightAnswer = String(makeProgression[hiddenAnswer]);
   makeProgression[hiddenAnswer] = '..';
   const question = makeProgression.join(' ');
   return [question, rightAnswer];
 };
 
-const startProgression = () => {
-  gameLogic(gameRule, gameData);
+const startProgressionGame = () => {
+  gameLogic(gameRule, getRoundData);
 };
 
-export default startProgression;
+export default startProgressionGame;

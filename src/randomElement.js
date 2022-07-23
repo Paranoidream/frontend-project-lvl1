@@ -1,7 +1,6 @@
 const randomElement = (min, max) => {
-  const floorMax = Math.floor(max);
-  const ceilMin = Math.ceil(min);
-  return Math.floor(Math.random() * (floorMax - ceilMin + 1) + ceilMin);
+  let random = min + Math.random() * (max + 1 - min);
+  return Math.floor(random);
 };
 
 export default randomElement;
