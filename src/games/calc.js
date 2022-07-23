@@ -4,15 +4,15 @@ import randomElement from '../randomElement.js';
 const gameRule = 'What is the result of the expression?';
 
 const count = (numOne, numTwo, symbol) => {
-switch (symbol) {
-  case '+': 
-    return numOne + numTwo;
-  case '-': 
-    return numOne - numTwo;
-  case '*': 
-    return numOne * numTwo;
-  default: 
-    throw new Error(`Unknown operator: ${symbol}`);
+  switch (symbol) {
+    case '+':
+      return numOne + numTwo;
+    case '-':
+      return numOne - numTwo;
+    case '*':
+      return numOne * numTwo;
+    default:
+      throw new Error(`Unknown operator: ${symbol}`);
   }
 };
 
