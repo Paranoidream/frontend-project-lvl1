@@ -1,4 +1,4 @@
-import getRandomNumber from '../randomElement';
+import getRandomNumber from '../randomElement.js';
 import gameLogic from '../index.js';
 
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
