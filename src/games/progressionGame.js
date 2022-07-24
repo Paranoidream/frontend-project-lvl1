@@ -1,4 +1,4 @@
-import getRandomNumber from '../randomElement';
+import getRandomNumber from '../randomElement.js';
 import gameLogic from '../index.js';
 
 const gameRule = 'What number is missing in the progression?';
