@@ -14,7 +14,7 @@ const getRoundData = () => {
   const num1 = getRandomNumber(0, 20);
   const num2 = getRandomNumber(0, 20);
   const question = `${num1} ${num2}`;
-  const rightAnswer = findGcd(num1, num2);
+  const rightAnswer = String(findGcd(num1, num2));
   return [question, rightAnswer];
 };
 
