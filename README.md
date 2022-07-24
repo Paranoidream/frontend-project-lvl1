@@ -1,3 +1,10 @@
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/Paranoidream/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Paranoidream/frontend-project-lvl1/actions)
+
+[![Linter Status](https://github.com/Paranoidream/frontend-project-lvl1/actions/workflows/action.yml/badge.svg)](https://github.com/Paranoidream/frontend-project-lvl1/actions)
+
+<a href="https://codeclimate.com/github/Paranoidream/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/81b694fa9af90a65058f/maintainability" /></a>
+
 ### Welcome to the Brain Games!
 <p>There are 5 games awailable for playing. </p>
 <p>In order to succseed you should type 3 correct answers in a row. </p>
@@ -19,13 +26,6 @@
 <li>brain-prime - starts a game where you need to figure out if the given number is prime. </li></ul>
 
 ### Good luck and have fun!
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/Paranoidream/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Paranoidream/frontend-project-lvl1/actions)
-
-[![Linter Status](https://github.com/Paranoidream/frontend-project-lvl1/actions/workflows/action.yml/badge.svg)](https://github.com/Paranoidream/frontend-project-lvl1/actions)
-
-<a href="https://codeclimate.com/github/Paranoidream/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/81b694fa9af90a65058f/maintainability" /></a>
 
 ### How it should run:
 
