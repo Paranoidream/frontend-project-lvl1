@@ -1,20 +1,20 @@
 import gameLogic from '../index.js';
-import randomElement from '../randomElement.js';
+import getRandomNumber from '../randomElement.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
 
-const divisor = (numOne, numTwo) => {
+const findGcd = (numOne, numTwo) => {
   if (numTwo !== 0) {
-    return divisor(numTwo, numOne % numTwo);
+    return findGcd(numTwo, numOne % numTwo);
   }
   return numOne;
 };
 
 const getRoundData = () => {
-  const num1 = randomElement(0, 20);
-  const num2 = randomElement(0, 20);
+  const num1 = getRandomNumber(0, 20);
+  const num2 = getRandomNumber(0, 20);
   const question = `${num1} ${num2}`;
-  const rightAnswer = divisor(num1, num2);
+  const rightAnswer = findGcd(num1, num2);
   return [question, rightAnswer];
 };
 

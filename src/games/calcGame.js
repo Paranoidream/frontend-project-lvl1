@@ -1,5 +1,5 @@
 import gameLogic from '../index.js';
-import randomElement from '../randomElement.js';
+import getRandomNumber from '../randomElement.js';
 
 const gameRule = 'What is the result of the expression?';
 
@@ -18,11 +18,11 @@ const count = (numOne, numTwo, symbol) => {
 
 const getRoundData = () => {
   const operators = ['+', '-', '*'];
-  const operator = operators[randomElement(0, operators.length - 1)];
-  const num1 = randomElement(0, 20);
-  const num2 = randomElement(0, 20);
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
+  const num1 = getRandomNumber(0, 20);
+  const num2 = getRandomNumber(0, 20);
   const question = `${num1} ${operator} ${num2}`;
-  const rightAnswer = count(num1, num2, operator);
+  const rightAnswer = String(count(num1, num2, operator));
   return [question, rightAnswer];
 };
 
