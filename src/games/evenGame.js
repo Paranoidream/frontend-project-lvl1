@@ -1,7 +1,7 @@
 import getRandomNumber from '../randomElement.js';
 import gameLogic from '../index.js';
 
-const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const isEven = (number) => number % 2 === 0;
 
@@ -12,7 +12,7 @@ const getRoundData = () => {
 };
 
 const startEvenGame = () => {
-  gameLogic(gameRule, getRoundData);
+  gameLogic(description, getRoundData);
 };
 
 export default startEvenGame;

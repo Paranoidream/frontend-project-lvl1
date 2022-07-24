@@ -1,7 +1,7 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../randomElement.js';
 
-const gameRule = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const count = (numOne, numTwo, symbol) => {
   switch (symbol) {
@@ -27,7 +27,7 @@ const getRoundData = () => {
 };
 
 const startCalcGame = () => {
-  gameLogic(gameRule, getRoundData);
+  gameLogic(description, getRoundData);
 };
 
 export default startCalcGame;

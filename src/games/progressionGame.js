@@ -1,7 +1,7 @@
 import getRandomNumber from '../randomElement.js';
 import gameLogic from '../index.js';
 
-const gameRule = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const getProgression = (start, step, length) => {
   const progression = [start];
@@ -24,7 +24,7 @@ const getRoundData = () => {
 };
 
 const startProgressionGame = () => {
-  gameLogic(gameRule, getRoundData);
+  gameLogic(description, getRoundData);
 };
 
 export default startProgressionGame;
